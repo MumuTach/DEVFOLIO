@@ -1,0 +1,40 @@
+
+<header id="header" class="header">
+    <div class="left">
+        <h1>Murielle</h1>
+    </div>
+    <div class="spacer"></div>
+    <nav class="right">
+        <div class="menu-icon" (click)="toggleMenu()">
+            <mat-icon>menu</mat-icon>
+        </div>
+        <ul [class.show]="isMenuOpen || isLargeScreen">
+            <li>
+                <a href="#home" class="active">
+                    <mat-icon class="menu-icon-small">home</mat-icon>
+                    HOME
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <mat-icon class="menu-icon-small">info</mat-icon>
+                    ABOUT
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    <mat-icon class="menu-icon-small">work</mat-icon>
+                    PROJECTS
+                </a>
+            </li>
+            <li>
+                <a href="#contacts">
+                    <mat-icon class="menu-icon-small">contact_mail</mat-icon>
+                    CONTACT
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+

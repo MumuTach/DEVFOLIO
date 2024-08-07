@@ -1,0 +1,60 @@
+.contacts {
+    padding: 50px 0;
+    background-color: #f9f3f1;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .container form button {
+    background-color: rgb(180, 74, 180);
+    color: white;
+    align-items: center;
+  }
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+
+  #description {
+    font-size: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #555;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  mat-form-field {
+    margin-bottom: 20px;
+  }
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  #description {
+    font-size: 15px;
+    margin-bottom: 60px;
+    color: #555;
+    text-align: center;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+}

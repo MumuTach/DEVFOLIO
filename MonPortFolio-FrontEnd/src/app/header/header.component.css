@@ -1,0 +1,111 @@
+header {
+    background-color: rgb(40, 28, 28);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.left h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+.left {
+    padding-left: 50px;
+}
+
+.spacer {
+    flex-grow: 1; 
+}
+
+.right {
+    padding-right: 50px;
+    position: relative;
+    display: inline-block; 
+}
+
+.right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.right li {
+    margin-left: 20px;
+}
+
+.right a {
+    color: white;
+    text-decoration: none;
+}
+
+.right a.active {
+    color: gold;
+}
+
+.right a:hover {
+    text-decoration: none;
+    color: gold;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+  }
+
+.menu-icon-small {
+  display: none; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px){
+   .menu-icon {
+    display: block; 
+  }
+  
+  .right ul {
+    display: none; 
+    position: fixed;
+    background-color:rgb(40, 28, 28);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+    border: none; 
+    z-index: 1;
+    flex-direction: row;
+  }
+
+  .right li {
+    margin-left: 0; 
+    width: auto;
+    text-align: center; 
+    padding: 18px 15px; 
+  }
+
+  .right a { 
+    display: block; 
+  }
+
+  .right ul.show {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu-icon-small {
+    display: inline-block;
+  }
+
+  .mat-icon {
+    font-size: 25px;
+  }
+
+}
+
