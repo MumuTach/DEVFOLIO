@@ -1,5 +1,4 @@
 .about,  .skills, .Reading{
-    /*background-color: #fbf1f0;*/
     background-color: #f9f3f1;
     padding: 60px 20px;
     position: relative;
@@ -32,8 +31,8 @@
   .about-content {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 20px;
   }
 
   .component {
@@ -42,15 +41,20 @@
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-width: 400px;
     width: 100%;
+    height: 100%;
     position: relative;
-    flex: 1 1 calc(60% - 10px);
+    flex: 1 1 calc(32% - 40px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
   }
 
   .component:nth-child(odd) {
     margin-top: 90px;
-    margin-left: 6px;
+    margin-bottom: -10px;
  }
 
   .component-header h3 {
@@ -62,9 +66,25 @@
   .component-body p {
     font-size: 15px;
     color: #555;
-    margin: 10px 0;
   }
 
+  .component-header::after {
+    content: "";
+    display: block;
+    border: 2px solid rgb(73, 72, 72);
+    width: calc(100% - 40px);
+    position: absolute;
+    top: 42px;
+}
+
+.component-header::before {
+    content: "● ● ●";
+    position: absolute;
+    top: 0;
+    margin: 0;
+    font-size: 30px;
+    color: #d9534f;
+}
   .reading-body {
     font-size: 15px;
     color: #555;
@@ -145,24 +165,6 @@
     align-items: center;
   }
 
-  .component-header::after {
-    content: "";
-    display: block;
-    border: 2px solid rgb(73, 72, 72);
-    width: calc(100% - 40px);
-    position: absolute;
-    top: 42px;
-}
-
-.component-header::before {
-    content: "● ● ●";
-    position: absolute;
-    top: 0;
-    margin: 0;
-    font-size: 30px;
-    color: #d9534f;
-}
-
 .reading-container {
   display: flex;
   justify-content: space-between;
@@ -229,14 +231,14 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   .about-content {
       flex-direction: column;
   }
 
   .component {
       position: relative;
-      margin-bottom: 20px;
+      margin:auto;
   }
 
   #description {
@@ -245,9 +247,9 @@
   }
 
   .component:nth-child(odd) {
-    margin-left: 50px;
-    margin-top: 8px;
-  }
+    margin-top: 0px;
+    margin-bottom: 0px;
+ }
 
   .text-div {
     flex: 1 1 calc(48% - 40px);
@@ -263,3 +265,9 @@
   }
 }
 
+@media (max-width: 768px) {
+  .text-div {
+    flex: 1 1 calc(48% - 40px);
+    margin: 10px; 
+  }
+}

@@ -18,7 +18,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
-import { provideHttpClient } from '@angular/common/http'; //remplace HttpClienModule
+import { provideHttpClient } from '@angular/common/http'; //remplace HttpClienModule pour Angular 18
+import { provideHttpClientTesting } from '@angular/common/http/testing';
+import { NoopAnimationDriver } from '@angular/animations/browser';
 
 @NgModule({
   declarations: [
@@ -40,11 +42,12 @@ import { provideHttpClient } from '@angular/common/http'; //remplace HttpClienMo
     MatCheckboxModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatInputModule
+    MatInputModule,
   ],
   providers: [
     provideHttpClient(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideHttpClientTesting()
   ],
   bootstrap: [AppComponent]
 })

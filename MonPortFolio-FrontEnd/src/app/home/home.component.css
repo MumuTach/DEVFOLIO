@@ -177,9 +177,9 @@
   }
 
   /* Style pour les écrans moyens */
-@media (min-width: 600px) and (max-width: 960px) {
+@media (min-width: 768px) and (max-width: 1000px) {
   .home {
-    padding: 168px;
+    padding: 160px;
   }
   
   .image-container {

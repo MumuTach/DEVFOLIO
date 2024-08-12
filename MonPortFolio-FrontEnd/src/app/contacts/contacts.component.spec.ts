@@ -8,6 +8,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { provideHttpClient } from '@angular/common/http';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 
 describe('ContactsComponent', () => {
@@ -24,12 +26,13 @@ describe('ContactsComponent', () => {
         MatIconModule,
         MatButtonModule,
         MatFormFieldModule,
-        MatInputModule,
-        provideHttpClientTesting()
+        MatInputModule
       ],
       providers: [
         ContactService,
-        provideHttpClientTesting()
+        provideHttpClient(),
+        provideHttpClientTesting(),
+        provideAnimationsAsync()
       ]
     })
     .compileComponents();
@@ -76,7 +79,7 @@ describe('ContactsComponent', () => {
     expect(messageInput.valid).toBeTruthy();
   });
 
-  it('should send an email', () => {
+  it('should send an email and refresh the page', async () => {
     const mockResponse = { message: 'Email sent successfully' };
 
     component.contactForm.setValue({
@@ -85,7 +88,9 @@ describe('ContactsComponent', () => {
       message: 'Hello!'
     });
 
-    component.onSubmit();
+    const reloadSpy = spyOn(window.location, 'reload');
+
+    await component.onSubmit();
 
     const req = httpMock.expectOne('http://localhost:3000/send-email');
     expect(req.request.method).toBe('POST');
@@ -96,5 +101,18 @@ describe('ContactsComponent', () => {
     });
 
     req.flush(mockResponse);
+
+    expect(reloadSpy).toHaveBeenCalled();
+  });
+
+  it('should show confirmation message on reload if form submitted', () => {
+    localStorage.setItem('formSubmitted', 'true');
+
+    component.ngOnInit();
+
+    expect(component.confirmationMessage).toBeTrue();
+    expect(localStorage.getItem('formSubmitted')).toBeNull();
   });
 });
+
+

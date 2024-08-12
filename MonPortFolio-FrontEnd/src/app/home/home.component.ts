@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     if (this.currentIndex < this.fullText.length) {
       this.animatedText += this.fullText.charAt(this.currentIndex);
       this.currentIndex++;
-      setTimeout(() => this.typeText(), 50); // Ajustez la vitesse de l'animation ici
+      setTimeout(() => this.typeText(), 50); // Ajuster la vitesse de l'animation
     }
   }
 }

@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   onResize(event: any) {
     this.isLargeScreen = event.target.innerWidth > 768;
     if (this.isLargeScreen) {
-      this.isMenuOpen = false; // Fermer le menu si la taille de l'écran est grande
+      this.isMenuOpen = false; 
     }
   }
   

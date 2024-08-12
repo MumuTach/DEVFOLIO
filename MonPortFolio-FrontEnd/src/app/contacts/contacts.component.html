@@ -6,26 +6,40 @@
       <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
         <mat-form-field class="full-width">
           <mat-label>Name</mat-label>
-          <input matInput formControlName="name" required>
-          <mat-error *ngIf="contactForm.get('name')?.hasError('required')">Name is required</mat-error>
+          <input matInput formControlName="name" required placeholder="Enter your name">
+          <mat-error *ngIf="contactForm.get('name')?.hasError('required') && (contactForm.get('name')?.touched)">Name is required</mat-error>
         </mat-form-field>
   
         <mat-form-field class="full-width">
           <mat-label>Email</mat-label>
-          <input matInput formControlName="email" required>
-          <mat-error *ngIf="contactForm.get('email')?.hasError('required')">Email is required</mat-error>
-          <mat-error *ngIf="contactForm.get('email')?.hasError('email')">Please enter a valid email address</mat-error>
+          <input matInput formControlName="email" required placeholder="Enter your email">
+          <mat-error *ngIf="contactForm.get('email')?.hasError('required') && (contactForm.get('email')?.touched)">Email is required</mat-error>
+          <mat-error *ngIf="contactForm.get('email')?.hasError('email') && (contactForm.get('email')?.touched)">Please enter a valid email address</mat-error>
         </mat-form-field>
   
         <mat-form-field class="full-width">
           <mat-label>Message</mat-label>
-          <textarea matInput formControlName="message" rows="5" required></textarea>
-          <mat-error *ngIf="contactForm.get('message')?.hasError('required')">Message is required</mat-error>
+          <textarea matInput formControlName="message" rows="5" required placeholder="Enter your textarea"></textarea>
+          <mat-error *ngIf="contactForm.get('message')?.hasError('required') && (contactForm.get('message')?.touched)">Message is required</mat-error>
         </mat-form-field>
         
         <div class="button-container">
             <button mat-raised-button color="primary" type="submit" [disabled]="contactForm.invalid">Submit</button>
           </div>
+          <div *ngIf="confirmationMessage" class="confirmation-message">
+            Message sent!
+          </div>
       </form>
     </div>
+    <a id="contacts"></a>
   </section>
+
+  <section id="resume" class="resume">
+    <div class="container">
+      <h2>DOWNLOAD MY RESUME</h2>
+      <a href="CV-Version-Française-Murielle.pdf" download>
+        <img src="download.png" alt="Télécharger mon CV" class="icon-download">
+      </a>
+    </div>
+  </section>
+

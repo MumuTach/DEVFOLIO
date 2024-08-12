@@ -7,12 +7,17 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjetsComponent } from './projets/projets.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FooterComponent } from './footer/footer.component';
+import { provideHttpClient } from '@angular/common/http';
+import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterModule.forRoot([])
+        RouterModule.forRoot([]),
+        MatIconModule,
+        MatFormFieldModule
       ],
       declarations: [
         AppComponent,
@@ -23,6 +28,9 @@ describe('AppComponent', () => {
         ContactsComponent,
         FooterComponent
       ],
+      providers: [
+        provideHttpClient()
+      ]
     }).compileComponents();
   });
 

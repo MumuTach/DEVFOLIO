@@ -2,6 +2,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { ContactService} from './contact-service.service';
 import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
+import { provideHttpClient } from '@angular/common/http';
 
 describe('ContactServiceService', () => {
   let service: ContactService;
@@ -11,6 +12,7 @@ describe('ContactServiceService', () => {
     TestBed.configureTestingModule({
       providers: [
         ContactService,
+        provideHttpClient(),
         provideHttpClientTesting() 
       ]
     });

@@ -11,6 +11,8 @@ import { firstValueFrom } from 'rxjs';
 export class ContactsComponent implements OnInit {
 
   contactForm: FormGroup;
+  confirmationMessage: boolean = false;
+  formSubmitted: boolean = false;
 
   constructor(
     private contactService: ContactService, 
@@ -22,17 +24,34 @@ export class ContactsComponent implements OnInit {
       });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (localStorage.getItem('formSubmitted') === 'true') {
+      this.confirmationMessage = true;
+      localStorage.removeItem('formSubmitted');
+      window.scrollTo(0, document.getElementById('contacts')!.offsetTop);
+    }
+  }
 
   async onSubmit(): Promise<void> {
+    this.formSubmitted = true;
     if (this.contactForm.valid) {
       const contactData = this.contactForm.value;
       
-      try {
-        const response = await firstValueFrom(this.contactService.sendContactForm(contactData)); // firstValueFrom convertit un observable en une Promise
-        console.log('Form submitted successfully:', response);
-      } catch (error) {
-        console.error('Error submitting form:', error);
+      if (this.contactForm.valid) {
+        const contactData = this.contactForm.value;
+        
+        try {
+          console.log("went into onSubmit");
+          await firstValueFrom(this.contactService.sendContactForm(contactData)); // Convert Observable to Promise
+          localStorage.setItem('formSubmitted', 'true'); // Set a flag in localStorage
+          //window.location.reload();
+        } catch (error) {
+          console.error('Error submitting form:', error);
+          this.confirmationMessage = false; 
+        }
+      } else {
+        this.confirmationMessage = false; 
+        console.log("form not valid")
       }
     }
   }

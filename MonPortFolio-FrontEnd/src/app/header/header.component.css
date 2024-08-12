@@ -109,3 +109,24 @@ header {
 
 }
 
+@media (max-width: 550px) {
+  .menu-icon {
+    display: block; 
+  }
+
+  .right li {
+    margin-left: 0; 
+    width: auto;
+    text-align: center; 
+    padding: 16px 8px; 
+  }
+
+  .menu-icon-small {
+    display: inline-block; 
+  }
+
+  .mat-icon {
+    font-size: 25px;
+  }
+}
+
