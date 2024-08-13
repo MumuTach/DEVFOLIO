@@ -12,13 +12,11 @@ Built with Angular 18 for the frontend and Express.js for the backend, this site
 </div>
 
 ## Sections 
-✔️ Summary and About me\
-✔️ Skills\
+✔️ Home\
+✔️ About me\
 ✔️ Projects\
-✔️ Certificates\
-✔️ Blogs\
 ✔️ Contact me\
-✔️ Github Profile
+✔️ Resume
 
 ## Technologies used 🛠️
 - **Angular 18** 🚀
