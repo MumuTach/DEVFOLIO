@@ -15,7 +15,7 @@ Built with Angular 18 for the frontend and Express.js for the backend, this site
 ✔️ Home\
 ✔️ About me\
 ✔️ Projects\
-✔️ Contact me
+✔️ Contact me\
 ✔️ Resume
 
 ## Technologies used 🛠️
