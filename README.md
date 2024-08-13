@@ -4,13 +4,12 @@
 Welcome to my personal portfolio website! This project showcases my journey as a junior developer, highlighting my skills, projects, and experience in web development. 
 Built with Angular 18 for the frontend and Express.js for the backend, this site serves as a central hub for my work, allowing you to explore the various projects I've created, learn more about me, and get in touch.
 
-## Demo Link (https://github.com/banesullivan/README?tab=readme-ov-file#-leave-a-good-impression)
+## [Demo Link](https://github.com/banesullivan/README?tab=readme-ov-file#-leave-a-good-impression)
 
-<p align="center">
-  <kbd>
-    <img src="MyportFolio.gif"></img>
-  </kbd>
-</p>
+<div align="center">
+  <img src="[https://i.postimg.cc/CxZXqhWM/ezgif-com-video-to-gif-1.gif](https://share.zight.com/9ZuJeQ80)" alt="DevFolio Demo" width="100%" />
+  <br>
+</div>
 
 ## Sections 
 ✔️ Summary and About me\
