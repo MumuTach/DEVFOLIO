@@ -21,8 +21,8 @@ Built with Angular 18 for the frontend and Express.js for the backend, this site
 ## Technologies used 🛠️
 - **Angular 18** 🚀
 - **Node JS** 🚀
-- **HTML** 🚀
-- **CSS** 🚀
+- **HTML5** 🚀
+- **CSS3** 🚀
 - **Typescript** 🚀
 - **JavaScript** 🚀
 - **SCSS** 🚀
