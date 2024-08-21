@@ -43,14 +43,19 @@ header {
     text-decoration: none;
 }
 
+.right a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .right a.active {
     color: gold;
 }
-
+/*
 .right a:hover {
     text-decoration: none;
     color: gold;
-}
+}*/
 
 .menu-icon {
     cursor: pointer;

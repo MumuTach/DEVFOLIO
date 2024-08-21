@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
 
   isMenuOpen = false;
   isLargeScreen = true;
+  activeLink: string = 'home';
   
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
@@ -24,6 +25,10 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu(){
     this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  setActiveLink(link: string) {
+    this.activeLink = link;
   }
 
 }

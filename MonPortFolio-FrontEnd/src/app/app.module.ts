@@ -20,7 +20,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { provideHttpClient } from '@angular/common/http'; //remplace HttpClienModule pour Angular 18
 import { provideHttpClientTesting } from '@angular/common/http/testing';
-import { NoopAnimationDriver } from '@angular/animations/browser';
 
 @NgModule({
   declarations: [

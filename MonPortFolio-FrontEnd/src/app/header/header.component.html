@@ -10,31 +10,31 @@
         </div>
         <ul [class.show]="isMenuOpen || isLargeScreen">
             <li>
-                <a href="#home" class="active">
+                <a href="#home" [ngClass]="{ 'active': activeLink === 'home' }" (click)="setActiveLink('home')">
                     <mat-icon class="menu-icon-small">home</mat-icon>
                     HOME
                 </a>
             </li>
             <li>
-                <a href="#about">
+                <a href="#about" [ngClass]="{ 'active': activeLink === 'about' }" (click)="setActiveLink('about')">
                     <mat-icon class="menu-icon-small">info</mat-icon>
                     ABOUT
                 </a>
             </li>
             <li>
-                <a href="#projects">
+                <a href="#projects" [ngClass]="{ 'active': activeLink === 'projects' }" (click)="setActiveLink('projects')">
                     <mat-icon class="menu-icon-small">work</mat-icon>
                     PROJECTS
                 </a>
             </li>
             <li>
-                <a href="#contacts">
+                <a href="#contacts" [ngClass]="{ 'active': activeLink === 'contacts' }" (click)="setActiveLink('contacts')">
                     <mat-icon class="menu-icon-small">contact_mail</mat-icon>
                     CONTACT
                 </a>
             </li>
             <li>
-                <a href="#resume">
+                <a href="#resume" [ngClass]="{ 'active': activeLink === 'resume' }" (click)="setActiveLink('resume')">
                     <mat-icon class="menu-icon-small">play_for_work</mat-icon>
                     RESUME
                 </a>
