@@ -7,7 +7,7 @@ Built with Angular 18 for the frontend and Express.js for the backend, this site
 ## [Demo Link](https://github.com/banesullivan/README?tab=readme-ov-file#-leave-a-good-impression)
 
 <div align="center">
-  <img src="../MonPortFolio.gif" alt="DevFolio Demo" width="100%" />
+  <img src="https://share.zight.com/JruZzmrd" alt="DevFolio Demo" width="100%" />
   <br>
 </div>
 
