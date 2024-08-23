@@ -43,7 +43,7 @@ $ cd DEVFOLIO
 $ git remote remove origin
 ```
 
-## Deployment
+## Deployment 📦
 Once you have done with your setup. You need to put your website online!
 I highly recommend to use Netlify to achieve this on the EASIEST WAY
 
