@@ -51,11 +51,6 @@ header {
 .right a.active {
     color: gold;
 }
-/*
-.right a:hover {
-    text-decoration: none;
-    color: gold;
-}*/
 
 .menu-icon {
     cursor: pointer;
@@ -70,6 +65,9 @@ header {
 }
 
 @media (max-width: 768px){
+  header {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
    .menu-icon {
     display: block; 
   }
@@ -115,6 +113,10 @@ header {
 }
 
 @media (max-width: 550px) {
+  header {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
   .menu-icon {
     display: block; 
   }

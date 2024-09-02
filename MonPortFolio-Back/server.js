@@ -12,7 +12,7 @@ app.use(cors({
   allowedHeaders: 'Content-Type,Authorization'
 }));
 
-app.post('/api/contact', async (req, res) => {
+app.post('/contact', async (req, res) => {
   console.log('Received request:', req.body);
   const { name, email, message } = req.body;
 

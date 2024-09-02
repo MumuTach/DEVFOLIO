@@ -46,3 +46,9 @@
   .social-icons a img:hover {
     transform: scale(1.1);
   }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+    }
+  }

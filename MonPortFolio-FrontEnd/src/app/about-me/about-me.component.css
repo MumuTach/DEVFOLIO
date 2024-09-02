@@ -263,11 +263,19 @@
   .text-title {
     font-size: 18px;
   }
+
+  .about h2, .Reading h2, .skills h2 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
 }
 
 @media (max-width: 768px) {
   .text-div {
     flex: 1 1 calc(48% - 40px);
     margin: 10px; 
+  }
+
+  h2 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
 }

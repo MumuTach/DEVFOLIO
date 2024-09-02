@@ -35,32 +35,16 @@ export class ContactsComponent implements OnInit {
 
   onSubmit(): void {
     console.log("in the onSubmit");
-    /*
     if (this.contactForm.valid) {
-      this.contactService.sendMessage(this.contactForm.value)
-        .then(() => {
-          localStorage.setItem('formSubmitted', 'true');
-          window.location.reload(); 
-        })
-        .catch((error) => {
-          console.error('Error sending message:', error);
+        this.contactService.sendMessage(this.contactForm.value).subscribe({
+          next: () => {
+            localStorage.setItem('formSubmitted', 'true');
+            window.location.reload();
+          },
+          error: (error) => {
+            console.error('Error sending message:', error);
+          }
         });
-    }*/
-        if (this.contactForm.valid) {
-          const testData = {
-            name: 'Test Name',
-            email: 'test@example.com',
-            message: 'This is a test message'
-          };
-          this.contactService.sendMessage(testData)
-            .then(() => {
-              console.log('Message sent successfully');
-            })
-            .catch((error) => {
-              console.error('Error sending message:', error);
-            });
-        } else {
-          console.log('Form is invalid');
-        }
+    }
   }
 }

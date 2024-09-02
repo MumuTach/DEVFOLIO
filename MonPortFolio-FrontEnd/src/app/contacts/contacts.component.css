@@ -78,6 +78,10 @@
   .full-width {
     width: 100%;
   }
+
+  h2 {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
 }
 
 .confirmation-message {
