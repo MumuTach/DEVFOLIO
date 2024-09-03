@@ -265,7 +265,7 @@
   }
 
   .about h2, .Reading h2, .skills h2 {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Georgia, "Comic Sans MS", "Comic Sans", cursive;
   }
 }
 
@@ -276,6 +276,6 @@
   }
 
   h2 {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Georgia, "Comic Sans MS", "Comic Sans", cursive;
   }
 }

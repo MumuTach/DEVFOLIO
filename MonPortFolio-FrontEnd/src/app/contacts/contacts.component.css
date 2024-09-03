@@ -75,12 +75,16 @@
     text-align: center;
   }
 
+  mat-form-field {
+    width: 100%;
+  }
+
   .full-width {
     width: 100%;
   }
 
   h2 {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Georgia, "Comic Sans MS", "Comic Sans", cursive;
   }
 }
 
