@@ -1,4 +1,3 @@
-/*Section Home*/
 .home {
     display: flex;
     justify-content: space-between;
@@ -79,7 +78,6 @@
     transform: translateX(5px);
   }
   
-  /* boîte de connexion */
   .connect-box {
     position: absolute;
     top: 100px;
@@ -161,13 +159,13 @@
   
     .text-container h2 {
       font-size: 25px;
-      font-family: Georgia, "Comic Sans MS", "Comic Sans", cursive;
+      font-family: Helvetica, "Comic Sans MS", "Comic Sans", cursive;
     }
   
     .text-container p {
       font-size: 45px; 
       color: #d9534f;
-      font-family: Georgia,"Comic Sans MS", "Comic Sans", cursive;
+      font-family: Helvetica,"Comic Sans MS", "Comic Sans", cursive;
     }
 
     .social-icon {
@@ -175,9 +173,13 @@
       height: auto;
       margin-left: 5px;
     }
+
+    .learn-more {
+      font-family: "Helvetica";
+      font-size: 15px;
+    }
   }
 
-  /* Style pour les écrans moyens */
 @media (min-width: 768px) and (max-width: 1000px) {
   .home {
     padding: 160px;
@@ -195,19 +197,17 @@
 
   .text-container h2 {
     font-size: 25px;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
 
   .text-container p {
     font-size: 45px; 
     color: #d9534f;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
 }
   
-  .yellow-icon {
-    color: gold;
-    font-size: 20px; 
-    margin-left: 10px;
-  }
+.yellow-icon {
+  color: gold;
+  font-size: 20px; 
+  margin-left: 10px;
+}
   

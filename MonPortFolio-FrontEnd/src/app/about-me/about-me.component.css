@@ -265,7 +265,7 @@
   }
 
   .about h2, .Reading h2, .skills h2 {
-    font-family: Georgia, "Comic Sans MS", "Comic Sans", cursive;
+    font-family: Helvetica, "Comic Sans MS", "Comic Sans", cursive;
   }
 }
 
@@ -275,7 +275,15 @@
     margin: 10px; 
   }
 
-  h2 {
-    font-family: Georgia, "Comic Sans MS", "Comic Sans", cursive;
+  .Reading h2, .skills h2, .about h2 {
+    font-family: "Helvetica";
   }
+
+  .component-header h3 {
+    font-family: "Helvetica";
+  }
+
+  .text-title {
+    font-family: "Helvetica";
+  } 
 }

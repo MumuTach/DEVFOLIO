@@ -99,7 +99,7 @@
     }
 
     .projects__row-content h3 {
-        font-family: Georgia, "Comic Sans MS", "Comic Sans", cursive;
+        font-family: Helvetica, "Comic Sans MS", "Comic Sans", cursive;
     }
 
     .projects__row:last-child {
@@ -111,7 +111,7 @@
     } 
 
     .projects h2 {
-        font-family: Georgia, "Comic Sans MS", "Comic Sans", cursive;
+        font-family: Helvetica, "Comic Sans MS", "Comic Sans", cursive;
     }
 }
 
