@@ -1,38 +1,47 @@
 .contacts, .resume {
-    padding: 50px 0;
+    padding: 30px 20px;
     background-color: #f9f3f1;
   }
-  
-  .container {
-    max-width: 700px;
-    margin: 0 auto;
-  }
 
-  .container form button {
-    background-color: rgb(180, 74, 180);
-    color: white;
-    align-items: center;
-  }
-  
-  h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-  }
-  
-  .full-width {
-    width: 100%;
-  }
+.contact-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
 
-  .icon-download {
-    width: 70px; 
-    height: auto;
-    cursor: pointer;
-    display: block; 
-    margin: 0 auto;
-    animation: moveUpDown 2s infinite ease-in-out;
-  }
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #555;
+}
+
+.icon-img {
+  max-width: 90px;
+  max-height: 70px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.icon-download {
+  width: 70px; 
+  height: auto;
+  cursor: pointer;
+  display: block; 
+  margin: 0 auto;
+  animation: moveUpDown 2s infinite ease-in-out;
+}
 
   @keyframes moveUpDown {
     0% {
@@ -46,20 +55,11 @@
     }
   }
 
-  #description {
+  #description, .contact-info {
     font-size: 20px;
     margin-bottom: 60px;
     text-align: center;
     color: #555;
-  }
-
-  .button-container {
-    display: flex;
-    justify-content: center; 
-  }
-  
-  mat-form-field {
-    margin-bottom: 20px;
   }
 
 @media (max-width: 768px) {
@@ -68,30 +68,23 @@
     margin: 0 auto;
   }
 
-  #description {
+  #description, .contact-info {
     font-size: 15px;
     margin-bottom: 60px;
     color: #555;
     text-align: center;
   }
 
-  mat-form-field {
-    width: 100%;
-  }
-
-  .full-width {
-    width: 100%;
-  }
-
   h2 {
     font-family: Helvetica, "Comic Sans MS", "Comic Sans", cursive;
   }
-}
 
-.confirmation-message {
-  color: #555;
-  display: flex;
-  justify-content: center; 
-  font-size: 15px;
-  margin-top: 15px;
+  .icon-img {
+    max-width: 70px;
+    max-height: 50px;
+  }
+
+  .contact-icons {
+    gap: 20px;
+  }
 }

@@ -3,33 +3,20 @@
       <h2>CONTACT ME</h2>
       <p id="description">Got a question or proposal, or just want
         to say hello? Go ahead.</p>
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <mat-form-field class="full-width">
-          <mat-label>Name</mat-label>
-          <input matInput formControlName="name" required placeholder="Enter your name">
-          <mat-error *ngIf="contactForm.get('name')?.hasError('required') && (contactForm.get('name')?.touched)">Name is required</mat-error>
-        </mat-form-field>
-  
-        <mat-form-field class="full-width">
-          <mat-label>Email</mat-label>
-          <input matInput formControlName="email" required placeholder="Enter your email">
-          <mat-error *ngIf="contactForm.get('email')?.hasError('required') && (contactForm.get('email')?.touched)">Email is required</mat-error>
-          <mat-error *ngIf="contactForm.get('email')?.hasError('email') && (contactForm.get('email')?.touched)">Please enter a valid email address</mat-error>
-        </mat-form-field>
-  
-        <mat-form-field class="full-width">
-          <mat-label>Message</mat-label>
-          <textarea matInput formControlName="message" rows="5" required placeholder="Enter your textarea"></textarea>
-          <mat-error *ngIf="contactForm.get('message')?.hasError('required') && (contactForm.get('message')?.touched)">Message is required</mat-error>
-        </mat-form-field>
-        
-        <div class="button-container">
-            <button mat-raised-button color="primary" type="submit" [disabled]="contactForm.invalid">Submit</button>
-          </div>
-          <div *ngIf="confirmationMessage" class="confirmation-message">
-            Message sent!
-          </div>
-      </form>
+      <div class="contact-icons">
+        <div class="contact-item">
+          <img src="phone.png" alt="Phone" class="icon-img">
+          <p class="contact-info">+1 825-747-5559</p>
+        </div>  
+        <div class="contact-item">
+          <img src="email_contact.png" alt="Email" class="icon-img">
+          <p class="contact-info">moboutachago&#64;yahoo.fr</p>
+        </div>  
+        <div class="contact-item">
+          <img src="linkedIn_contact.png" alt="linkedIn" class="icon-img">
+          <p class="contact-info"><a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel ='noopener'>LinkedIn</a></p>
+        </div>
+      </div>
     </div>
     <a id="contacts"></a>
   </section>
