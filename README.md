@@ -2,7 +2,7 @@
 
 ## My Personal portfolio made with Angular 18
 Welcome to my personal portfolio website! This project showcases my journey as a junior developer, highlighting my skills, projects, and experience in web development. 
-Built with Angular 18 for the frontend and Express.js for the backend, this site serves as a central hub for my work, allowing you to explore the various projects I've created, learn more about me, and get in touch.
+Built with Angular 18, this site serves as a central hub for my work, allowing you to explore the various projects I've created, learn more about me, and get in touch.
 
 ## [Demo Link](https://github.com/banesullivan/README?tab=readme-ov-file#-leave-a-good-impression)
 
@@ -20,7 +20,6 @@ Built with Angular 18 for the frontend and Express.js for the backend, this site
 
 ## Technologies used 🛠️
 - **Angular 18** 🚀
-- **Express JS** 🚀
 - **HTML5** 🚀
 - **CSS3** 🚀
 - **Typescript** 🚀
