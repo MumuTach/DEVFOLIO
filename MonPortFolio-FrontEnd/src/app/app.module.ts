@@ -21,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
 import { provideHttpClient } from '@angular/common/http'; //remplace HttpClienModule pour Angular 18
 import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { CertificationsComponent } from './certifications/certifications.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     AboutMeComponent,
     ProjetsComponent,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,

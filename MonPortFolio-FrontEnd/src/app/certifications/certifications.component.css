@@ -1,0 +1,60 @@
+
+.certification{
+    background-color: #f9f3f1;
+    padding: 60px 20px;
+    position: relative;
+  }
+
+  .certification h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+
+.certification-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+  .certification-thumbnail {
+    width: 100%;
+    max-width: 500px;
+    max-height: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .certification-thumbnail:hover {
+    transform: scale(1.05);
+  }
+
+  #description {
+    font-size: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #555;
+  }
+
+  @media (max-width: 550px) {
+    #description {
+      font-size: 15px;
+      margin-bottom: 50px;
+    }
+
+    .certification h2 {
+      font-family: Helvetica, "Comic Sans MS", "Comic Sans", cursive;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .certification h2 {
+      font-family: Helvetica, "Comic Sans MS", "Comic Sans", cursive;
+    }
+
+    .certification h2 {
+        font-family: "Helvetica";
+      }
+  }
