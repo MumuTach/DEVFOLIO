@@ -116,10 +116,9 @@
   
   .skill {
     padding: 20px;
-    width: 120px;
+    width: 250px;
     text-align: center;
     position: relative;
-    overflow: hidden;
   }
   
   .skill img {
@@ -127,28 +126,55 @@
     height: 80px; 
     object-fit: contain;
   }
-  
-  .skill-title {
-    margin: 10px 0 0 0;
-    color: black;
-    display: none;
-  }
-  
+
+  .progress-container {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+}
   .skill:hover img {
     transform: scale(1.2); 
   }
   
-  .skill:hover .skill-title {
-    display: block;
+  .skill:hover .progress-container {
+    display: flex;
+}
+
+.skill:hover .skill-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.progress-title-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; 
+    background-color: black; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.skill-level {
     color: white; 
-    background-color: rgba(0, 0, 0, 0.7); 
-    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
     border-radius: 5px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+}
+
+.progress {
+    height: 100%;
+    background-color:red;
+    border-radius: 5px;
+}
 
   .Reading::after {
     content: "";
