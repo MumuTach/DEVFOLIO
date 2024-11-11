@@ -22,6 +22,7 @@ import { provideHttpClient } from '@angular/common/http'; //remplace HttpClienMo
 import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 import { CertificationsComponent } from './certifications/certifications.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CertificationsComponent } from './certifications/certifications.compone
     ProjetsComponent,
     ContactsComponent,
     FooterComponent,
-    CertificationsComponent
+    CertificationsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

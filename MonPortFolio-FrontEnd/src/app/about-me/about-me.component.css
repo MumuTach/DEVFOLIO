@@ -1,4 +1,4 @@
-.about,  .skills, .Reading {
+.about,.Reading {
     background-color: #f9f3f1;
     padding: 60px 20px;
     position: relative;
@@ -14,7 +14,7 @@
     left: 0;
   }
   
-  .about h2, .Reading h2, .skills h2 {
+  .about h2, .Reading h2 {
     font-size: 30px;
     margin-bottom: 10px;
     text-align: center;
@@ -96,85 +96,6 @@
     width: 100%; 
     margin: 0; 
   }
-
-  .skills::after {
-    content: "";
-    display: block;
-    width: 100%;
-    border-top: 4px dashed black;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .skill {
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .skill img {
-    max-width: 80px; 
-    height: 80px; 
-    object-fit: contain;
-  }
-
-  .progress-container {
-    display: none; 
-    flex-direction: column;
-    align-items: center;
-}
-  .skill:hover img {
-    transform: scale(1.2); 
-  }
-  
-  .skill:hover .progress-container {
-    display: flex;
-}
-
-.skill:hover .skill-title {
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.progress-title-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between; 
-    background-color: black; 
-    padding: 10px; 
-    border-radius: 5px; 
-}
-
-.skill-level {
-    color: white; 
-    font-size: 14px;
-    font-weight: bold;
-    margin-right: 8px;
-}
-
-.progress-bar {
-    width: 100%;
-    height: 10px;
-    background-color: #ddd;
-    border-radius: 5px;
-}
-
-.progress {
-    height: 100%;
-    background-color:red;
-    border-radius: 5px;
-}
 
   .Reading::after {
     content: "";
