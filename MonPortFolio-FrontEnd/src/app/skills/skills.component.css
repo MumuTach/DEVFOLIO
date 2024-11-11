@@ -33,6 +33,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    flex-direction: row;
   }
   
   .skill {
@@ -96,3 +97,20 @@
     background-color:red;
     border-radius: 5px;
 }
+
+@media (max-width: 550px) {
+    #description {
+      font-size: 15px;
+      margin-bottom: 50px;
+    }
+
+    .skills h2 {
+      font-family: Helvetica, "Comic Sans MS", "Comic Sans", cursive;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills h2 {
+      font-family: "Helvetica";
+    }
+  }
